@@ -13,9 +13,13 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+
 // Typing animation for the about section
-const aboutText = "Olá meu nome é Gustavo Baumann, e aqui está um resumo sobre minha história! ";
 const aboutElement = document.querySelector('#about p');
+
+if (aboutElement) {
+
+const aboutText = aboutElement.dataset.text;
 let index = 0;
 
 function typeWriter() {
@@ -31,6 +35,9 @@ window.addEventListener('load', () => {
     aboutElement.textContent = '';
     typeWriter();
 });
+
+}
+
 
 // Form validation
 const contactForm = document.querySelector('#contact form');
@@ -73,6 +80,7 @@ if (contactForm) {
     });
 }
 
+
 // Mobile menu toggle
 const mobileMenuToggle = document.createElement('div');
 mobileMenuToggle.className = 'menu-toggle';
@@ -99,6 +107,7 @@ function checkScreenSize() {
 
 window.addEventListener('resize', checkScreenSize);
 window.addEventListener('load', checkScreenSize);
+
 
 // Add some interactive effects
 document.querySelectorAll('section').forEach(section => {
