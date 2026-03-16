@@ -119,3 +119,8 @@ document.querySelectorAll('section').forEach(section => {
         section.style.transform = 'translateY(0) scale(1)';
     });
 });
+
+
+function entrar(){
+    window.location.href = "index.html";
+}

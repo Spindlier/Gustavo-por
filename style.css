@@ -295,6 +295,35 @@ form button:hover {
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(45deg, #0080ff, #4a90e2) 1;
     padding-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 50px;
     text-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
+}
+
+
+
+
+.play-btn {
+    font-size: 40px;
+    background: linear-gradient(45deg, #0080ff, #4a90e2);
+    color: white;
+
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px rgba(0,128,255,0.6),
+        0 0 20px rgba(0,128,255,0.5),
+        0 0 40px rgba(74,144,226,0.4);
+}
+
+.play-btn:hover {
+    transform: scale(1.2);
+
+    box-shadow:
+        0 0 20px rgba(0,128,255,0.8),
+        0 0 40px rgba(74,144,226,0.7),
+        0 0 80px rgba(74,144,226,0.6);
 }
