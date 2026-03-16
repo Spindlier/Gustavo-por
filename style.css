@@ -327,3 +327,20 @@ form button:hover {
         0 0 40px rgba(74,144,226,0.7),
         0 0 80px rgba(74,144,226,0.6);
 }
+
+
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.container img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.frase{
+    color: white;
+    max-width: 100px;
+  
+}

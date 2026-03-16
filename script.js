@@ -42,46 +42,6 @@ window.addEventListener('load', () => {
 }
 
 
-// Form validation
-const contactForm = document.querySelector('#contact form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const name = document.querySelector('input[type="text"]').value.trim();
-        const email = document.querySelector('input[type="email"]').value.trim();
-        const message = document.querySelector('textarea').value.trim();
-
-        let isValid = true;
-        let errorMessage = '';
-
-        // Name validation
-        if (name.length < 2) {
-            isValid = false;
-            errorMessage += 'Nome deve ter pelo menos 2 caracteres.\n';
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            isValid = false;
-            errorMessage += 'Email inválido.\n';
-        }
-
-        // Message validation
-        if (message.length < 10) {
-            isValid = false;
-            errorMessage += 'Mensagem deve ter pelo menos 10 caracteres.\n';
-        }
-
-        if (isValid) {
-            alert('Mensagem enviada com sucesso! Obrigado pelo contato.');
-            contactForm.reset();
-        } else {
-            alert('Por favor, corrija os seguintes erros:\n' + errorMessage);
-        }
-    });
-}
 
 
 // Mobile menu toggle
