@@ -14,6 +14,9 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 
+
+
+
 // Typing animation for the about section
 const aboutElement = document.querySelector('#about p');
 
