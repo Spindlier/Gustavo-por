@@ -115,6 +115,14 @@ function toggleCongresso() {
 }
 
 function toggleFast() {
-    var div = document.getElementById("imagens-fast"); // Mude para imagens-fast
-    div.style.display = div.style.display === "block" ? "none" : "block";
+    var div = document.getElementById("imagens-fast");
+    var texto = document.getElementById("texto-fast");
+
+    if (div.style.display === "block") {
+        div.style.display = "none";
+        texto.style.display = "none";
+    } else {
+        div.style.display = "block";
+        texto.style.display = "block";
+    }
 }
