@@ -85,7 +85,7 @@ document.querySelectorAll('section').forEach(section => {
 
 
 function entrar(){
-    window.location.href = "index.html";
+    window.location.href = "gustavo.html";
 }
 
 
