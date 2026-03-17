@@ -113,3 +113,8 @@ function toggleCongresso() {
     var div = document.getElementById("imagens-congresso");
     div.style.display = div.style.display === "block" ? "none" : "block";
 }
+
+function toggleFast() {
+    var div = document.getElementById("imagens-fast"); // Mude para imagens-fast
+    div.style.display = div.style.display === "block" ? "none" : "block";
+}
