@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,152 +11,101 @@
 <header>
     <nav>
         <div class="logo">Gustavo Baumann</div>
-
-
     </nav>
 </header>
 
+<!-- SOBRE -->
 <section id="about">
     <h2>Sobre Mim</h2>
 
-    <img src="Imagem do WhatsApp de 2025-08-16 à(s) 18.44.19_5c371afc.jpg" 
-    alt="Foto de Gustavo" class="about-photo">
+    <img src="familia.jpg" alt="Foto de Gustavo" class="about-photo">
 
     <p data-text="Olá meu nome é Gustavo, e aqui está um pouco da minha história de vida."></p>
-
 </section>
 
-<section id="projects">
-    <h2></h2>
-
-    <div class="project">
-       
-
-<ul>
+<!-- INFORMAÇÕES -->
+<section>
     <h2>Informações básicas</h2>
-        <li>13/02/2008-Joinville</li>
-  
-        <li>Paixão por esportes</li>
+
+    <ul>
+        <li>13/02/2008 - Joinville</li>
+
+        <li onclick="toggleEsportes()" style="cursor:pointer;">
+            Paixão por esportes
+        </li>
+
+        
+            <div id="imagens-esportes" class="galeria">
+                <img src="karate.jpg" alt="">
+                <img src="mirante.jpg" alt="">
+            </div>
+        
 
         <li>Programador</li>
-
         <li>Engenharia de software</li>
-
         <li>Multilog</li>
-
     </ul>
-
-
-   
 </section>
 
-
-
-<section id="about">
+<!-- INSPIRAÇÃO -->
+<section>
     <h2>Inspiração</h2>
 
-   
-   
-
     <div class="container">
-    <img src="Elon Musk.jpg" alt="Elon Musk">
+        <img src="Elon Musk.jpg" alt="Elon Musk">
 
-    <p class="frase">
-        "Eu nunca desisto, teria que estar morto ou completamente incapacitado"
-    </p>
-</div>
-
-</section>
-      
-    
-
-
-   
+        <p class="frase">
+            "Eu nunca desisto, teria que estar morto ou completamente incapacitado"
+        </p>
+    </div>
 </section>
 
+<!-- EXPERIÊNCIA -->
+<section>
+    <h2>Experiência e Projetos</h2>
 
-        <section id="projects">
-    <h2></h2>
+    <ul>
+        <li onclick="toggleCongresso()" style="cursor:pointer;">
+            1º Congresso de Inteligência Artificial Nacional do SESI
+        </li>
 
-    <div class="project">
-       
-
-<ul>
-    <h2>Experiencia e Projetos</h2>
-
-        <li> 1congresso de Inteligencia Artificial Nacional Do Sesi </li>
+        <li>
+            <div id="imagens-congresso" class="galeria">
+                <img src="congresso.jpg" alt="">
+            </div>
+        </li>
 
         <li>Fast-Sesi</li>
-  
-     
-
-        <li>Engenharia de software/cursando</li>
-
+        <li>Engenharia de software (cursando)</li>
         <li>Técnico de desenvolvimento de software</li>
-        
     </ul>
-
-
-   
 </section>
 
-
-
- <section id="projects">
-    <h2></h2>
-
-    <div class="project">
-       
-
-<ul>
+<!-- CONHECIMENTOS -->
+<section>
     <h2>Conhecimentos</h2>
 
-
-
     <div class="yu">
-          <img src="php_horizontal_logo_icon_170852.png" alt="" srcset="">
-        <img src="file_type_html_icon_130541.png" alt="" srcset="">
-
-    <img src="file_type_css_icon_130661.png" alt="" srcset="">
-    <img src="javascript_icon_130900.png" alt="" srcset="">
-       
-       <img src="mysql_logo_icon_169941.png" alt="" srcset="">
-        </div>
-
-        
-    </ul>
-
-
-   
+        <img src="php_horizontal_logo_icon_170852.png">
+        <img src="file_type_html_icon_130541.png">
+        <img src="file_type_css_icon_130661.png">
+        <img src="javascript_icon_130900.png">
+        <img src="mysql_logo_icon_169941.png">
+    </div>
 </section>
 
-
-
-
-
-
-
-
+<!-- CONTATO -->
 <section id="contact">
-
     <h2>Contato</h2>
 
-
-   
-
-    <p>LinkedIn:
-        <a href="https://www.linkedin.com/in/gustavo-baumann-92b1442a1" target="_blank">
-        Gustavo Baumann
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com" target="_blank">
+            Gustavo Baumann
         </a>
     </p>
-
-
-
-
 </section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-

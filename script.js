@@ -89,3 +89,27 @@ function entrar(){
 }
 
 
+
+
+
+function entre() {
+    var div = document.getElementById("imagens");
+
+    var estilo = window.getComputedStyle(div).display;
+
+    if (estilo === "none") {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+}
+
+function toggleEsportes() {
+    var div = document.getElementById("imagens-esportes");
+    div.style.display = div.style.display === "block" ? "none" : "block";
+}
+
+function toggleCongresso() {
+    var div = document.getElementById("imagens-congresso");
+    div.style.display = div.style.display === "block" ? "none" : "block";
+}
